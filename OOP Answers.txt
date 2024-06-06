@@ -1,0 +1,613 @@
+﻿ОТВЕТЫ НУЖНЫ НА АНГЛИЙСКОМ!!!!! (тк на экзамене будем отвечать на английском)
+
+
+ПРИ НАПИСАНИИ ОТВЕТА, ТАКЖЕ ДОБАВЬТЕ ССЫЛКУ НА ИСТОЧНИК!
+
+
+
+
+1-билет 
+What is Object-Oriented Programming (OOP) and how does it differ from procedural programming?
+(Что такое объектно-ориентированное программирование (ООП) и чем оно отличается от процедурного программирования?)
+
+
+ссылка на YouTube -Что такое ООП (объектно-ориентированное программирование)?
+ссылка на сайт - https://blog.skillfactory.ru/glossary/oop-obektno-orientirovannoe-programmirovanie/
+
+
+ООП подход написания и сруктурирования кода . Представь, что мы написали программу, которая занимается учетом всех работников в твоей компании. И на первый взгляд она довольно простая.
+И пусть тут есть какие-то переменные, куда мы будем записывать данные сотрудника. А ещё есть функции, которые выполняют действия над этими данными, например, сохраняют работника в базе данных, или считают зарплату, перемножив оклад и грейд. По-умному это называется процедурным программированием. Но есть проблема. Если надо добавить ещё одного работника, то придётся объявлять для него свои переменные, а потом ещё и учитывать это в функциях. 
+Ну и для решения этих проблем был выработан такой подход, как объектно-ориентированное программирование. Суть его в том, что мы можем объединить группу логически связанных переменных в один блок, то есть как бы сделать одну большую переменную, в которую мы положим данные. И назвать это объектом.
+
+
+OOP approach to writing and structuring code. Imagine that we have written a program that deals with keeping track of all the employees in your company. And at first glance it is quite simple.
+And let there be some variables where we will record the employee's data. And then there are functions that perform actions on this data, for example, save the employee in the database, or calculate the salary by multiplying the salary and grade. This is called procedural programming. But there's a problem. If you need to add one more employee, you will have to declare your own variables for him and then take it into account in functions. 
+So, to solve these problems developed such an approach as object-oriented programming. Its essence is that we can combine a group of logically related variables into one block, i.e. we can make one big variable where we put data. And call it an object.
+
+
+
+
+2 - билет
+The concept of classes and objects in Python.
+(Понятие классов и объектов в Python.)
+
+
+In Python (as in other object-oriented programming languages), classes and objects are basic concepts that help organize and structure code. Let's break down these concepts with a simple example.
+
+
+Class
+A class is like a blueprint or template for creating objects. It describes what data (variables) and methods (functions) these objects will have.
+
+
+Imagine you want to create several objects describing cars. The class will contain all the common characteristics (e.g. make, model, year) and actions (e.g. drive, stop) that cars can perform.
+  
+
+
+
+Object
+An object is a concrete instance of a class. If a class is a blueprint, then an object is a house already built from that blueprint. An object has all the properties and methods that are defined in the class.
+  
+
+
+
+
+
+Ссылка на Metanit - https://metanit.com/python/tutorial/7.1.php 
+
+
+
+
+
+
+3 - билет 
+How is encapsulation implemented in Python? Provide an example.
+
+
+Encapsulation is achieved in Python through the use of classes. A class is a blueprint for creating objects, and it defines the properties and behaviors of an object. In Python, encapsulation is achieved through the use of access modifiers and getter and setter methods.
+
+
+Example of public access: 
+class Car:
+    color = "red"
+    
+    def start(self):
+        print("Car started!")
+
+
+
+
+
+
+Protected access
+
+
+class Car:
+    _mileage = 0
+    
+    def _drive(self):
+        self._mileage += 10
+
+
+
+
+Private access:
+
+
+class Car:
+    __engine_capacity = "2000cc"
+    
+    def __start_engine(self):
+        print("Engine started!")
+
+
+
+
+
+
+
+
+(source: Encapsulation in Python (With Examples))
+
+
+
+
+
+
+4 - билет 
+What is inheritance in Python? Give an example of a simple inheritance hierarchy.
+
+
+Inheritance is a fundamental concept in Python’s object-oriented programming. It allows a class, known as the child class, to inherit the attributes and methods of another class, referred to as the parent class. This mechanism promotes code reusability and logical organization of code
+
+
+Example: 
+class Parent:
+    pass
+
+
+class Child(Parent):
+    pass
+
+
+# In this example, Child is a subclass of Parent and inherits its attributes and methods.
+
+
+(source: Python Inheritance Explained: Complete Guide)
+
+
+
+
+5 - билет 
+Importance of polymorphism in OOP.
+
+
+Polymorphism is used in OOP to allow developers to write more efficient code and redefine methods for derived classes; however, it could raise real-time performance issues.
+It gives the ability to write more efficient code and redefine methods for derived classes, which makes polymorphism a must-learn concept in OOP.
+
+
+(source: Understanding the role of polymorphism in OOP | TechTarget)
+
+
+6 - билет
+What is the purpose of the __init__ method in Python classes?
+
+
+Python init method is a special function that we can apply to initialize a class. When we create an object of the class, the method is automatically applied and defines the object’s initial behavior. In this sense, we can use the class object as a pointer to the object being initialized, accessing the class’s attributes and methods, and performing any other operations necessary to initialize the object.
+
+
+(source: init python: Learn how to use __init__ to initialize objects in python - Copahost )
+
+
+7 - билет
+How do you achieve method overloading in Python?
+
+
+In Python, Method Overloading is achieved by defining multiple methods with the same name within a class but with different parameter lists or using the *args and **kwargs syntax.
+
+
+(source: Method Overloading and Method Overriding in Python: Key Differences )
+
+
+
+
+8 - билет
+Explain the difference between class variables and instance variables in Python.
+
+
+Class variables store data that is common to all instances, making them a powerful tool for managing shared states and settings.
+
+
+(Python Class Variables vs. Instance | Pouya Hallaj | Medium )
+
+
+
+
+9 - билет(Инкапсуляция)
+How is encapsulation implemented in Python? Provide an example.
+Encapsulation in programming is a way to protect data within an object so that it can only be modified through certain methods of that object. 
+Encapsulation is the restriction of access to the components (methods and variables) that make up an object. Encapsulation makes some of the components accessible only within a class.
+
+
+Encapsulation in Python only works at the level of agreement between programmers about which attributes are public and which are internal.
+A single underscore at the beginning of an attribute name indicates that the variable or method is not intended to be used outside of class methods, but the attribute is accessible by that name.
+
+
+A double underscore at the beginning of an attribute name gives more protection: the attribute becomes inaccessible by that name.
+
+
+
+
+ЗДЕСЬ ДОЛЖЕН БЫТЬ ПРИМЕР(ПОЗЖЕ СДЕЛАЮ)
+
+
+source (Инкапсуляция)
+youtube sourceИнкапсуляция в Python | Базовый курс. Программирование на Python
+ИНКАПСУЛЯЦИЯ В ООП ПИТОНА
+
+
+10 - билет(Наследование)
+What is inheritance in Python? Give an example of a simple inheritance hierarchy.
+
+
+Inheritance in Python allows one class to get the properties and methods of another class. 
+
+
+Inheritance allows you to isolate behavior common to several classes and put it into a separate entity. That is, inheritance is a means of code reuse - using existing code to solve new problems!
+
+
+Inheritance allows you to get a new class, slightly different from the old one. We do not need to have access to the code of the original class, which means that with the help of inheritance, we can adapt (reuse) to our tasks, including other people's classes!
+
+
+  
+
+
+
+source (Наследование)(Hexlet)(Наследование в объектно-ориентированном программировании. Введение в ООП Python)
+
+
+
+
+11 - билет
+Single Inheritance in Python
+
+
+Single inheritance in programming is when a class inherits properties and methods from only one parent class. This is the simplest type of inheritance, where the child class gets all the characteristics of one base (or parent) class.
+
+
+
+
+Features of Single Inheritance:
+Simplicity: The class structure remains simple and straightforward as each class inherits from a single parent.
+Predictability: It is easier to keep track of where properties and methods come from, since there is only one source.
+Method Overriding: A child class can override the methods of the parent class to modify or extend their functionality.
+Single inheritance helps organize code by avoiding repetition and simplifying maintenance, making it a key tool for object-oriented programming.
+
+
+
+
+
+
+  
+
+
+
+
+
+12 - билет
+Multiple Inheritance in Python
+
+
+Multiple inheritance in programming is the ability of a class to inherit properties and methods from multiple parent classes at once. This is different from single inheritance, where a child class can inherit from only one parent.
+
+
+Features of multiple inheritance:
+Complexity: Multiple inheritance can make the structure of classes more complex and difficult to understand.
+Method Resolution Problems: If two parent classes have methods with the same names, the child class may face ambiguity about which method to call.
+Diamond problem: A problem that occurs when a class inherits from two classes that in turn inherit from the same base class. This can cause the base class to be initialized more than once if not controlled.
+  
+
+
+
+ООП 30 Множественное наследование в Python. Multiple inheritance in Python
+
+
+
+
+
+
+13 - билет
+Multilevel Inheritance in Python
+Multi-level inheritance in Python is a concept where a class inherits from another class that is itself derived from another base class. 
+
+
+Multi-level inheritance in Python is when classes are organized as a chain. One class inherits properties and methods from another class, which in turn can also be derived from another class. This is similar to a family relationship, where a child gets traits from its parents and parents get traits from their parents (grandparents).
+
+
+Features of multilevel inheritance:
+Sequential inheritance: Each class in the inheritance chain extends the previous class by adding new properties or methods or modifying existing ones.
+Code reuse: Multi-level inheritance maximizes the use of code already written, minimizing duplication and simplifying code management.
+Easy Extension: It is easy to add a new level to the hierarchy by extending an existing class.
+Clear structure: A logical and clear inheritance hierarchy helps you manage the relationships between different objects.
+
+
+
+
+  
+
+
+
+14 - билет
+Hierarchical Inheritance in Python
+
+
+Hierarchical inheritance in Python is when multiple classes inherit from one common base class. This is similar to a tree with a single root from which many branches branch off. The base class serves as the “root”, providing common properties or methods that are then used or extended in child classes. Hierarchical inheritance in programming is when many classes descend from one common base class. It is similar to how in a family, children may inherit common traits from their parents, but each child may develop these traits in a different way.
+
+
+The features of hierarchical inheritance in simple words:
+Code reuse: If you have a base class that describes common properties or actions, you don't need to write the same code again for each new class. 
+Specialization: Each child class can add or change what is inherited from the parent class. 
+Ease of Extension: It is easy to add new classes to the system by inheriting from a common base class. If you want to add a new mode of transportation, such as “Motorcycle”, you just need to inherit it from “Vehicle” and it will automatically have the basic “move” function, and you can add something specific, such as a motor sound (“vroom-vroom”).
+
+
+
+
+
+
+  
+
+
+
+15 - билет
+Super() Function in Python Inheritance
+
+
+super() is a built-in function of the Python language.
+super() is a function that allows you to access parent class methods from a child class, especially if you override a method in the child class.
+
+
+The importance of super():
+Without super(): If we didn't use super(), we would need to manually call the base class methods or duplicate their code in the child class. This would lead to extra code and potential errors.
+With super(): We automatically inherit and correctly initialize all necessary attributes and methods from the base class, which makes the code cleaner and easier to maintain.
+Thus, super() ensures that objects are properly initialized and access methods that have been overridden in child classes, making it easier to handle inheritance.
+
+
+  
+
+  
+
+Айзира
+
+
+16 - билет
+Composition in Python
+
+
+
+
+Composition is a design principle in object-oriented programming where one class contains an object of another class. It represents a "Has-A" relationship. Composition allows for the creation of complex objects by combining simpler objects. In many scenarios, composition can be favored over inheritance to create relationships between classes because it provides better flexibility and avoids potential issues that can arise from a deep inheritance hierarchy. Provides a more flexible and modular approach as opposed to inheritance. Enhances code reusability and establishes a clear relationship between classes.
+
+
+Example:
+Let's say we have a class Engine and another class Car. A Car "has an" Engine, so instead of inheriting from Engine, the Car class will contain an instance of the Engine class.
+  
+
+The above example demonstrates the composition between Car and Engine. The Car doesn't inherit the properties and methods of Engine, but it "has an" Engine and can use its functionalities.
+
+
+
+
+
+
+
+
+17 - билет
+Aggregation in Python
+
+
+Aggregation in object-oriented programming represents a relationship where one object contains other objects as parts of itself. It allows for the creation of more complex data structures from simpler components. The primary advantage of aggregation lies in improving code modularity, readability, and ease of maintenance, making it a crucial principle in software development. For instance, in game development, the implementation of aggregation can be highly beneficial. Let's consider a scenario where we have a "Player" class containing objects such as "Armor," and "Inventory." Each of these objects can function independently, yet within the context of the player, they are aggregated as its constituent parts. Thus, aggregation enables us to construct intricate data structures composed of simpler components, fostering modularity and flexibility in our code.
+
+
+In aggregation, we create a relationship between two classes where one class has a reference object of another class. The lifetime of the owned object does not depend on the lifetime of the owner class. If the owner object gets deleted, the owned object can continue to exist in the program lifecycle. (источник) 
+
+
+
+
+
+
+18 - билет
+Association in Python
+
+
+Association in Python represents a relationship where objects of two classes interact with each other but are not necessarily part of each other. It is a weaker relationship where objects can exist independently of each other and be used in different contexts. Utilizing association in Python allows for the construction of complex systems and the management of objects from different classes. Association is a mechanism that enables objects to remain independent and utilize each other to accomplish tasks. When creating data structures and building complex systems, associations play a crucial role and should be correctly defined and implemented. (источник)
+
+
+
+
+19 - билет
+Importance of polymorphism in OOP.
+
+
+Polymorphism means that objects or functions can have multiple forms or behaviors. This implies that one entity in the code can manifest differently depending on the context. Polymorphism is one of the key concepts in OOP because it enables programmers to write more flexible and scalable code. It allows performing the same action in different ways and using multiple forms of one object, variable, or method. Additionally, it enhances code readability and reusability. It empowers programmers to utilize the same code in various contexts, saving development time and improving overall project efficiency. 
+
+
+(источник почитайте его)
+
+
+
+
+20 - билет
+What is the purpose of the __init__ method in Python classes?
+
+
+The __init__ method is used to set the initial state of an object when it's created. It assigns values to the data members of the class. When you create a new object by calling the class, Python automatically calls the __init__ method if it's defined in that class. This allows you to perform the necessary initialization of the object.
+In the __init__ method, you define which attributes should be initialized when the object is created, and what values they should have. This method takes not only the class attributes (self) as parameters but also any other arguments you pass when creating an instance of the class. (источник) (для дополнительного)
+
+
+
+
+21 - билет
+How do you achieve method overloading in Python?
+
+
+Function overloading is a feature of a programming language that allows a function to be defined more than once. The function is defined with the same name but with different parameters. The function is called based on the number of parameters passed to it. It is achieved by defining multiple functions with the same name but with different parameters. The function is called based on the number of parameters passed to it. Function overloading is not supported in Python. However, it can be achieved by using default arguments and variable-length arguments. 
+
+
+1. Function Overloading using Default Arguments
+  
+
+In the above example, we have defined the add() function with four parameters. The c and d parameters have default values of 0. We have called the add() function with two, three, and four arguments. The output shows that the add() function is called based on the number of arguments passed to it. The add() function is called with two arguments, three arguments, and four arguments.
+
+
+2. Function Overloading using Variable-length Arguments
+  
+
+In the above example, we have defined the add() function with a variable-length argument. We have called the add() function with two, three, and four arguments. The output shows that the add() function is called based on the number of arguments passed to it. The add() function is called with two arguments, three arguments, and four arguments.
+(источник)
+
+
+
+
+Балжан
+22 - билет 
+Magic Methods (Special Methods) in Python
+https://realpython.com/python-magic-methods/
+
+
+Special methods or under (double underscore) method  - is a special method whose name starts and ends with a double underscore. They are needed to implement the properties of objects when they interact because these methods are core to some Python features.  Python automatically calls magic methods as a response to certain operations, such as instantiation, sequence indexing, attribute managing, and much more. Magic methods support core object-oriented features in Python. 
+
+
+Here are some examples of Magic/Special Methods and their use :
+
+
+__init__(self, ...): for Initializing a new object.
+__str__(self): for Representation of an object as a string (for ex with print & str)
+__repr__(self): Representation of the object as a string for debugging 
+__len__(self): Returning the length of the object 
+__add__(self, other): Definition of the addition operator (+).
+__sub__(self, other): Definition of the subtraction operator (-).
+__eq__(self, other): Definition of the equality operator (==).
+__lt__(self, other): Definition of the less operator (<).
+
+
+
+
+23 - билет
+str and repr Methods in Python
+
+
+In Python, the __str__ and __repr__ methods are used to represent an object as a string, but they perform different tasks.
+
+
+__str__(self): This method returns a string representation of the object intended to be displayed to end users. It should be readable and easy to read. When you use the str() function or the print() function on an object, Python calls its __str__ method to get a string representation.
+__repr__(self): This method returns the "official" string representation of the object, intended for debugging and development. It should be ambiguous and, if possible, sufficient to recreate the object. It is mainly used for debugging. When you use the repr() function or call eval(repr(obj)), Python calls the __repr__ object method.
+
+
+Thus, __str__ is used to create a human-readable view for users, while __repr__ is used to create an ambiguous view for developers.
+
+
+то есть короче, str это конечный результат который будет видеть пользователь а repr это для разработчика внизу пример и в видео от начала до 4:58 
+#13. Магические методы __str__, __repr__, __len__, __abs__ | ООП Python
+
+
+  
+  
+
+
+
+ну вот короче когда пишем просто cat (название экземпляра класса) выходит отладочная инфа а при print & str выходит норм инфа как для пользователя
+
+
+24 - билет
+len and getitem Methods in Python
+
+
+__len__(self): This method is used to determine the length of an object. When the built-in len() function is called for an object, Python tries to find and call the __len__ method of this object.
+
+
+__getitem__(self, key): This method is used to access the elements of an object by index or key. When an attempt is made to index an object (for example, obj[key]), Python searches for and calls the __getitem__ method of this object.
+
+
+Thus, the __len__ method is used to determine the length of an object, and the __getitem__ method is used to access its elements. These methods make objects in Python more convenient to work with as collections of data.
+
+
+примеры:
+
+
+
+
+
+
+  
+
+
+
+
+
+#13. Магические методы __str__, __repr__, __len__, __abs__ | ООП Python про len от 5:00 до 7:44 там очень понятный пример 
+
+
+вот мы написали __len__ метод и поэтому обычный len после метода будет показывать нам нужное значение
+
+
+
+
+
+
+  
+
+
+
+
+
+25 - билет
+add and sub Methods in Python
+
+
+__add__(self, other): This method defines the behavior of the addition operator (+) for objects of your class. When an addition operation occurs between two objects, Python calls the __add__ method of the first object, passing the second object as the other argument.
+
+
+_sub__(self, other): This method defines the behavior of the subtraction operator (-) for objects of your class. When a subtraction operation occurs between two objects, Python calls the __sub__ method of the first object, passing the second object as the other argument.
+
+
+#14 Магические методы __add__, __sub__, __mul__, __truediv__ |  ООП Python
+от начала до 16:10 объяснение про работу add 
+  
+  
+
+
+
+26 - билет
+Class and Static Methods in Python
+https://medium.com/nuances-of-programming/python-%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0-%D0%B8-%D1%8D%D0%BA%D0%B7%D0%B5%D0%BC%D0%BF%D0%BB%D1%8F%D1%80%D0%B0-%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0-3e8529d24786 (тут примеры и этот вопрос связан сос ледкющим)
+#5. Методы класса (classmethod) и статические методы (staticmethod) | ООП Python 
+
+
+Class methods:
+- A class method is bound to a class, not to its instances. It takes as its first argument a reference to a class (often called cls), rather than an instance.
+- Class methods are used for operations related to the class as a whole, and not to a specific instance.
+* The @classmethod decorator is used to define a class method.
+
+
+Static methods:
+- A static method is not bound to an instance of a class, nor to the class itself. It does not take either a reference to an instance or a class as the first argument.
+- Static methods are used to define functionality that does not depend on the state of an instance or class.
+- The @staticmethod decorator is also used to define a static method.
+
+
+Most often, a class method is used when a generating method is needed that returns an object of the class. Static methods are mainly used as auxiliary functions and work with the data that is passed to them.
+
+
+important 
+Methods of a class cannot access a specific object of the class, but have access to the class itself through the cls.
+Static methods work like regular functions, but belong to the domain of class names. They do not have access to the class itself or to its instances.
+
+
+27 - билет
+@classmethod and @staticmethod Decorators in Python
+https://webdevblog.ru/obyasnenie-classmethod-i-staticmethod-v-python/
+
+
+@staticmethod – used to create a method that knows nothing about the class or instance through which it was called. It simply receives the passed arguments, without an implicit first argument, and its definition is immutable through inheritance. [Simply put, @staticmethod is like a regular function defined inside a class that does not have access to an instance, so it can be called without creating an instance of the class.]
+
+
+@classmethod is a method that gets a class as an implicit first argument, just like a regular instance method gets an instance. This means that you can use the class and its properties inside this method, rather than a specific instance. [Simply put, @classmethod is a regular class method that has access to all the attributes of the class through which it was called. Therefore, classmethod is a method that is bound to a class, not an instance of a class.]
+
+
+@classmethod is used in a superclass to define how a method should behave when it is called by different child classes. Whereas @staticmethod is used when we want to return the same thing, regardless of the child class being called. Also keep in mind that calling @classmethod involves additional memory allocation, which is not present when calling @staticmethod or a regular function.
+
+
+Нурбек
+28 - билет
+Explain the difference between class variables and instance variables in Python.
+In Python, class variables and instance variables are both types of variables, but they serve different purposes and are used in different contexts within classes.
+1. Class Variables:
+   * Class variables are variables that are shared among all instances of a class.
+   * They are defined within the class but outside of any methods.
+   * Class variables are typically used to store data that is common to all instances of the class, such as default values or constants.
+   * They are accessed using the class name, rather than an instance of the class.
+   * Class variables can be modified using the class name, and the new value will be reflected in all instances of the class.
+2. Instance Variables:
+   * Instance variables are variables that are unique to each instance of a class.
+   * They are defined inside the class methods, typically within the __init__ method.
+   * Instance variables represent the state of an individual object and can vary from one instance to another.
+   * They are accessed using the instance of the class (i.e., self), and each instance has its own set of instance variables.
+   * Instance variables are usually used to store data that is specific to each instance, such as properties or attributes of an object.
+  
+
+
+
+29 - билет
+Discuss the concept of method overriding and provide an example in Python.
+Method overriding is a feature in object-oriented programming that allows a subclass to provide a specific implementation of a method that is already provided by its superclass. This means that a subclass can provide a specialized version of a method that is inherited from its superclass, allowing for polymorphic behavior.
+
+
+When a method in a subclass has the same name, parameters, and return type as a method in its superclass, the method in the subclass is said to override the method in the superclass. The method in the subclass is then used instead of the method in the superclass when an object of the subclass is used.
+
+
+  
+
+
+
+30 - билет
+How can you implement multiple inheritance in Python?
+Multiple inheritance in Python allows a subclass to inherit from multiple parent classes. This means that a subclass can inherit attributes and methods from more than one parent class. To implement multiple inheritance in Python, you simply list the parent classes in parentheses after the subclass name in the class definition.
